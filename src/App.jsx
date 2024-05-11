@@ -2,8 +2,7 @@ import React from "react";
 import io from "socket.io-client";
 import { useEffect, useState } from "react";
 
-const socket = io();
-
+const socket = io("https://socketback-afjbjx3gr-amals-projects-4475a49d.vercel.app/");
 function App() {
   //Room State
   const [room, setRoom] = useState("");
